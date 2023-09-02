@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loging</title>
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+    
+    <h1>
+       Registrate
+    </h1>
+
+    <form action="/user/register" method="post">
+
+        <div>
+            <label for="name">Nombre</label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name"
+                value="<%= ( locals.old && old.name ) ? old.name : '' %> "
+            >
+
+            <% if( locals.errors && errors.name ){ %>
+                <i>
+                    <%= errors.name.msg %>
+                </i>
+            <% } %>
+
+        </div>
+            
+        <br>
+
+
+        <div>
+            <label for="lastname">Apellido</label>
+            <input 
+                type="text" 
+                name="lastname" 
+                id="lastname" 
+                value="<%= ( locals.old && old.lastname ) ? old.lastname : '' %> "
+
+            >
+
+            <% if( locals.errors && errors.lastname ){ %>
+                <i>
+                    <%= errors.lastname.msg %>
+                </i>
+            <% } %>
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="asd@asd.com" 
+                id="email"
+                value="<%= ( locals.old && old.email ) ? old.email : '' %>"
+            >
+
+            <% if( locals.errors && errors.email ){ %>
+                <i>
+                    <%= errors.email.msg %>
+                </i>
+            <% } %>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Constraseña</label>
+            <input type="password" name="password" id="password">
+
+            <% if( locals.errors && errors.password ){ %>
+                <i>
+                    <%= errors.password.msg %>
+                </i>
+            <% } %>
+
+        </div>
+
+        <div>
+            <label for="rePassword">Repetí la Constraseña</label>
+            <input type="password" name="rePassword" id="rePassword">
+            <% if( locals.errors && errors.rePassword ){ %>
+                <i>
+                    <%= errors.rePassword.msg %>
+                </i>
+            <% } %>
+
+        </div>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+
+
+
+</body>
+</html>

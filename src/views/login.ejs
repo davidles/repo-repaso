@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loging</title>
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+    
+    <h1>
+        Log In 
+    </h1>
+
+    <form action="/user/login" method="post">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="asd@asd.com" id="email">
+        </div>
+
+        <div>
+            <label for="password">Constraseña</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+
+        <button type="submit">Login</button>
+    </form>
+
+
+
+
+</body>
+</html>
