@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loging</title>
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+    
+    <h1>
+        Hi <%= user.name %>
+    </h1>
+
+    <form action="/user/profile" method="post">
+        <button type="submit">LogOut</button>
+    </form>
+
+
+
+
+</body>
+</html>

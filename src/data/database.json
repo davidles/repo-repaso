@@ -1,1 +1,23 @@
-[{"id":"1","name":" David","lastname":"Lescano","email":"david@dh.com","password":"admin","rePassword":"admin"},{"id":"2","name":" Juli","lastname":"Diaz","email":"juli@fs.com","password":"$2a$10$g9xBQ/AutemFNbivRIN3NexGb8QZ3hj9/GoUEr.eYJXZxxPIkolo.","rePassword":"hola"},{"id":"3","name":"Julie","lastname":"Lopez ","email":"julo@dh.com","password":"$2a$10$KB9cxS7j20sxiQ0/mZoWQOSxnBVgiBlxgeQ2xyYeVXmVll.qf508W"},{"id":"4","name":"Aguss","lastname":"Polli","email":"jorge@dh.com","password":"$2a$10$uIJYzFW5FoINh2XG4cCMvuX0Y8eOp2zB5D0tZXwvJHd5oHHgtbA9."}]
+[
+  {
+    "id": "1",
+    "name": "david",
+    "lastname": "les",
+    "email": "david@dh.com",
+    "password": "$2a$10$CGqizgQpIIpMegOWAXfdVuBaPSbBzK1soj.7p5p6c0ngaNy5gtFtu"
+  },
+  {
+    "id": "2",
+    "name": "Agus",
+    "lastname": "asd",
+    "email": "agus@dh.com",
+    "password": "$2a$10$/ZqLQEVIEd.Yizrfahpuruve6vpwwndko7ab.VM2aKXMv5cLjL.EG"
+  },
+  {
+    "id": "3",
+    "name": "meli",
+    "lastname": "asd",
+    "email": "meli@dh.com",
+    "password": "$2a$10$BAy8LVM3V5AgH42fAkfC9e3/ZRNQVQalDfwRVQmgXVuHwL5kxXsjW"
+  }
+]

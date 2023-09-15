@@ -2,15 +2,23 @@
 
     <nav>
         <ul>
-            <li>
-                <a href="/user/login">LogIn</a>
-            </li>
-            <li>
-                <a href="/user/register">Registrarse</a>
-            </li>
-            <li>
-                <a href="/user/profile">Perfil</a>
-            </li>
+            <% if(locals.isLogged){ %>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/user/profile">Perfil</a>
+                </li>
+
+            <%  }else{ %>
+                <li>
+                    <a href="/user/login">LogIn</a>
+                </li>
+                <li>
+                    <a href="/user/register">Registrarse</a>
+                </li>
+
+            <% } %>
         </ul>
     </nav>
 

@@ -14,7 +14,13 @@ router.post('/login', userController.login);
 
 /*** Register */
 router.get('/register',  userController.formRegister);
-router.post('/register', validacionesRegistro, resultadoValidacion,userController.register);
+router.post('/register', validacionesRegistro, userController.register);
+
+router.get('/profile',  userController.profile);
+
+router.post('/profile',  userController.logout);
+
+
 
 
 module.exports  = router;
