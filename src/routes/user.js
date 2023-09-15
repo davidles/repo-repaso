@@ -5,7 +5,7 @@ const router = express.Router();
 const userController = require('../controllers/userController');
 
 // Middlewares
-const { validacionesRegistro, resultadoValidacion } = require('../middlewares/validarRegistro')
+const  validacionesRegistro  = require('../middlewares/validarRegistro')
 
 /*** LOGIN */
 router.get('/login', userController.formLogin);
