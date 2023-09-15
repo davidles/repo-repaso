@@ -21,13 +21,16 @@
                 type="text" 
                 name="name" 
                 id="name"
-                value="<%= ( locals.old && old.name ) ? old.name : '' %> "
+                value="<%= ( locals.old && old.name ) ? old.name : '' %>"
             >
 
             <% if( locals.errors && errors.name ){ %>
-                <i>
-                    <%= errors.name.msg %>
-                </i>
+                <div>
+                    <i>
+                        <%= errors.name.msg %>
+                    </i>
+
+                </div>
             <% } %>
 
         </div>
@@ -41,14 +44,17 @@
                 type="text" 
                 name="lastname" 
                 id="lastname" 
-                value="<%= ( locals.old && old.lastname ) ? old.lastname : '' %> "
+                value="<%= ( locals.old && old.lastname ) ? old.lastname : '' %>"
 
             >
 
             <% if( locals.errors && errors.lastname ){ %>
-                <i>
-                    <%= errors.lastname.msg %>
-                </i>
+                <div>
+                    <i>
+                        <%= errors.lastname.msg %>
+                    </i>
+
+                </div>
             <% } %>
 
         </div>
@@ -66,9 +72,12 @@
             >
 
             <% if( locals.errors && errors.email ){ %>
-                <i>
-                    <%= errors.email.msg %>
-                </i>
+                <div>
+                    <i>
+                        <%= errors.email.msg %>
+                    </i>
+
+                </div>
             <% } %>
         </div>
 
@@ -79,9 +88,12 @@
             <input type="password" name="password" id="password">
 
             <% if( locals.errors && errors.password ){ %>
-                <i>
-                    <%= errors.password.msg %>
-                </i>
+                <div>
+                    <i>
+                        <%= errors.password.msg %>
+                    </i>
+
+                </div>
             <% } %>
 
         </div>
@@ -90,9 +102,12 @@
             <label for="rePassword">Repetí la Constraseña</label>
             <input type="password" name="rePassword" id="rePassword">
             <% if( locals.errors && errors.rePassword ){ %>
-                <i>
-                    <%= errors.rePassword.msg %>
-                </i>
+                <div>
+
+                    <i>
+                        <%= errors.rePassword.msg %>
+                    </i>
+                </div>
             <% } %>
 
         </div>
